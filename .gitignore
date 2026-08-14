@@ -1,0 +1,31 @@
+# مجلدات البناء الخاصة بـ Visual Studio
+.vs/
+Debug/
+Release/
+x64/
+x86/
+Win32/
+bin/
+obj/
+
+# ملفات المستخدم والحلول المحلية
+*.user
+*.suo
+*.sdf
+*.opensdf
+*.VC.db
+*.VC.opendb
+*.userosscache
+*.sln.docstates
+
+# ملفات تنفيذية وكائنات ناتجة عن الترجمة
+*.exe
+*.obj
+*.ilk
+*.pdb
+*.idb
+*.pch
+*.tlog
+*.log
+*.lib
+*.exp
