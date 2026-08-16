@@ -1,4 +1,4 @@
-using namespace std;
+﻿using namespace std;
 #include <string>
 #include <iostream>
 
@@ -11,7 +11,7 @@ int ReadNumber() {
 
 int main()
 {
-    cout << "________ Final Version ________\n";
+    cout << "________ Final Version - Last Version  ________\n";
     cout << ReadNumber();
     cout << endl;
 
