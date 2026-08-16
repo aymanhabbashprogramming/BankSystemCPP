@@ -11,7 +11,7 @@ int ReadNumber() {
 
 int main()
 {
-    cout << "________ MAIN VERSION ________\n";
+    cout << "________ Read Number Function ________\n";
     cout << endl;
     cout << ReadNumber();
     cout << endl;
