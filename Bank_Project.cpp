@@ -11,8 +11,7 @@ int ReadNumber() {
 
 int main()
 {
-    cout << "________ DEV VERSION ________\n";
-    cout << endl;
+    cout << "________ Final Version ________\n";    cout << endl;
     cout << ReadNumber();
     cout << endl;
 
