@@ -11,13 +11,10 @@ int ReadNumber() {
 
 int main()
 {
-    cout << "________ Read Number From User ________\n";
-
+    cout << "________ Read Number Function ________\n";
     cout << endl;
     cout << ReadNumber();
     cout << endl;
-
-    cout << "Hello, I am on branch main";
 
     return 0;
 }
