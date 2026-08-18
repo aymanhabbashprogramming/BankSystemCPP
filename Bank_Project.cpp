@@ -3,7 +3,7 @@
 #include <string>
 #include "UserInfoLibrary.h"
 #include <iostream>
-
+#include "ContactInfo.h"
 
 int ReadNumber()
 {
@@ -14,7 +14,6 @@ int ReadNumber()
 
     return Number;
 }
-
 
 int main()
 {
@@ -37,12 +36,36 @@ int main()
 
     cout << "\n------------------------\n";
 
+    // Contact Information
+    clsContactInfo Contact1(
+        "0551234567",
+        "ahmad@gmail.com",
+        "Konya, Turkey"
+    );
+
+    cout << "Contact Information\n";
+    cout << "-------------------\n";
+
+    cout << "Phone   : " << Contact1.GetPhone() << endl;
+    cout << "Email   : " << Contact1.GetEmail() << endl;
+    cout << "Address : " << Contact1.GetAddress() << endl;
+
+    cout << "\n-------------------\n";
+
+    Contact1.SetPhone("0559876543");
+    Contact1.SetEmail("ahmad.new@gmail.com");
+    Contact1.SetAddress("Istanbul, Turkey");
+
+    cout << "Updated Contact Information\n";
+    Contact1.PrintContactInfo();
+
+    cout << "\n------------------------\n";
+
     // Update user information
     User1.SetFullName("Ahmad Mohammed Ali");
     User1.SetPhone("0559876543");
 
-    // Display updated information
-    cout << "Updated Information:\n";
+    cout << "Updated User Information:\n";
     cout << "Full Name : " << User1.GetFullName() << endl;
     cout << "Phone     : " << User1.GetPhone() << endl;
 
@@ -59,5 +82,6 @@ int main()
     // Read a number
     cout << "Welcome to Bank System\n";
     cout << "You entered: " << ReadNumber() << endl;
+
     return 0;
 }
