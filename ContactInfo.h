@@ -15,6 +15,13 @@ private:
 
 public:
 
+    clsContactInfo()
+    {
+        _Phone = "";
+        _Email = "";
+        _Address = "";
+    }
+
     clsContactInfo(string Phone, string Email, string Address)
     {
         _Phone = Phone;
@@ -50,6 +57,11 @@ public:
     string GetAddress()
     {
         return _Address;
+    }
+
+    bool IsEmailValid()
+    {
+        return _Email.find('@') != string::npos;
     }
 
     void PrintContactInfo()

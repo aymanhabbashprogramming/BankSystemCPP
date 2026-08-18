@@ -2,40 +2,29 @@
 
 #include <iostream>
 #include <string>
-#include "UserInfoLibrary.h"
+#include "MyStringLabrary.h"
 
 int main()
 {
-    clsUserInfo User1(
-        101,
-        "ahmad123",
-        "Ahmad Ali",
-        "ahmad@gmail.com",
-        "0551234567"
-    );
+    string Text = "ahmad ali";
 
-    cout << "User Information\n";
-    cout << "------------------------\n";
+    cout << "Original Text: " << Text << endl;
 
-    User1.PrintUserInfo();
+    cout << "Upper First Letter: "
+        << clsMyStringLibrary::UpperFirstLetterOfEachWord(Text)
+        << endl;
 
-    cout << "\n------------------------\n";
+    cout << "Lower First Letter: "
+        << clsMyStringLibrary::LowerFirstLetterOfEachWord(Text)
+        << endl;
 
-    User1.SetUserID(202);
-    User1.SetUsername("ahmad202");
-    User1.SetFullName("Ahmad Mohammed Ali");
+    cout << "Number of Words: "
+        << clsMyStringLibrary::CountWords(Text)
+        << endl;
 
-    cout << "Updated User Information\n";
-    cout << "------------------------\n";
-
-    User1.PrintUserInfo();
-
-    cout << "\n------------------------\n";
-
-    User1.Deactivate();
-
-    cout << "User Status: "
-        << User1.GetUserStatus() << endl;
+    cout << "Reversed Text: "
+        << clsMyStringLibrary::ReverseString(Text)
+        << endl;
 
     return 0;
 }
