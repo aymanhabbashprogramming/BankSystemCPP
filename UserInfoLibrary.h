@@ -71,6 +71,11 @@ public:
         return _IsActive ? "Active" : "Inactive";
     }
 
+    string GetUserSummary()
+    {
+        return _Username + " - " + _FullName + " - " + GetUserStatus();
+    }
+
     void SetUserID(int UserID)
     {
         _UserID = UserID;
