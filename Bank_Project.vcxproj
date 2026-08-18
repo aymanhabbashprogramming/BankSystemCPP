@@ -142,6 +142,7 @@
     <ClCompile Include="Bank_Project.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ContactInfo.h" />
     <ClInclude Include="UserInfoLibrary.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

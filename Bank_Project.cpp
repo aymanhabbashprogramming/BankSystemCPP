@@ -59,6 +59,5 @@ int main()
     // Read a number
     cout << "Welcome to Bank System\n";
     cout << "You entered: " << ReadNumber() << endl;
-
     return 0;
 }
