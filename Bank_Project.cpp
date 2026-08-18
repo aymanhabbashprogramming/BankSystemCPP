@@ -11,9 +11,7 @@ int ReadNumber() {
 
 int main()
 {
-    cout << "Welcome to Bank System";
-    cout << ReadNumber();
-    cout << endl;
+
 
     return 0;
 }
