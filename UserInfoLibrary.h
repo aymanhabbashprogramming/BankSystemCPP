@@ -1,5 +1,6 @@
 #pragma once
 #include <string>
+#include <iostream>
 using namespace std;
 
 class clsUserInfo
@@ -65,6 +66,16 @@ public:
         return _IsActive;
     }
 
+    string GetUserStatus()
+    {
+        return _IsActive ? "Active" : "Inactive";
+    }
+
+    void SetUserID(int UserID)
+    {
+        _UserID = UserID;
+    }
+
     void SetUsername(string Username)
     {
         _Username = Username;
@@ -93,5 +104,15 @@ public:
     void Deactivate()
     {
         _IsActive = false;
+    }
+
+    void PrintUserInfo()
+    {
+        cout << "User ID   : " << _UserID << endl;
+        cout << "Username  : " << _Username << endl;
+        cout << "Full Name : " << _FullName << endl;
+        cout << "Email     : " << _Email << endl;
+        cout << "Phone     : " << _Phone << endl;
+        cout << "Status    : " << GetUserStatus() << endl;
     }
 };
