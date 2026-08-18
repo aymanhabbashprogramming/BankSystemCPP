@@ -4,6 +4,18 @@
 #include "UserInfoLibrary.h"
 #include <iostream>
 
+
+int ReadNumber()
+{
+    int Number = 0;
+
+    cout << "Enter Number\n";
+    cin >> Number;
+
+    return Number;
+}
+
+
 int main()
 {
     // Create a new user
@@ -41,6 +53,12 @@ int main()
 
     cout << "Account Active: "
         << (User1.IsActive() ? "Yes" : "No") << endl;
+
+    cout << "\n------------------------\n";
+
+    // Read a number
+    cout << "Welcome to Bank System\n";
+    cout << "You entered: " << ReadNumber() << endl;
 
     return 0;
 }
