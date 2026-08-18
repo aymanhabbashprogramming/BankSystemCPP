@@ -11,7 +11,7 @@ int ReadNumber() {
 
 int main()
 {
-    cout << "________ Final Version - Last Version  ________\n";
+    cout << "Welcome to Bank System";
     cout << ReadNumber();
     cout << endl;
 
